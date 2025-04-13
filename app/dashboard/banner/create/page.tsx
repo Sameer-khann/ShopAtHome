@@ -89,9 +89,10 @@ export default function BannerRoute() {
                 <UploadDropzone
                   onClientUploadComplete={(res) => {
                     setImages(res[0].url);
+                    // alert("Your code reach the uplaod complete section")
                   }}
                   onUploadError={() => {
-                    alert("Something went wrong");
+                    alert("Something went wrong while uploading image");
                   }}
                   endpoint="bannerImageRoute"
                 />
